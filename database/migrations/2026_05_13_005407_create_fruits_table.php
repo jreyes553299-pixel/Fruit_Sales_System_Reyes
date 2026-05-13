@@ -14,10 +14,11 @@ return new class extends Migration {
             $table->id();
             $table->timestamps();
             $table->string('name');
-            $table->integer('price');
+            $table->string('category');
+            $table->decimal('price', 8, 2);
             $table->integer('stock_quantity');
-            $table->string('description');
-            $table->enum('availability', ['in stock', 'out of stock'])->default('in stock');
+            $table->text('description')->nullable();
+            $table->string('availability')->default('In Stock');
         });
     }
 

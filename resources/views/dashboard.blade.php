@@ -5,7 +5,14 @@
         </h2>
     </x-slot>
 
-    <a href="{{ route('fruits.create') }}">Add Fruit</a>
+    <div class="py-12 pb-0">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="flex space-x-4 mb-4">
+                <a href="{{ route('fruits.index') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Manage Fruits</a>
+                <a href="{{ route('fruits.reports') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Fruit Reports</a>
+            </div>
+        </div>
+    </div>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
